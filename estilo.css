@@ -1,0 +1,118 @@
+/* Direcao: prateleira neutra. A cor vem de cada app; a pagina central nao tem cor propria. */
+.site{--g:40px;--pg2:#F4F5F3;--tx:#15191C;--tx2:#566067;--ln:#D2D6D2;--bco:#FFFFFF;
+  --mp:#0F4C5C;--mp2:#0A3540;--zr:#0B2A44;
+  --vy:#0F1214;--vy-card:#1A1F22;--vy-ln:#2C3236;--vy-tx:#F5F2EA;--vy-tx2:#ABB1AC;--vy-am:#FFB224;--vy-sobre:#1C1403;
+  --txt:"Schibsted Grotesk","Segoe UI",Arial,sans-serif;--mono:"DM Mono",Consolas,monospace;--vy-letra:"Archivo","Segoe UI",Arial,sans-serif;
+  background:var(--pg2);color:var(--tx);font:400 16px/1.45 var(--txt)}
+.site h1,.site h2,.site h3,.site p,.site ul,.site figure{margin:0}
+.site ul{padding:0;list-style:none}
+.site h1,.site h2,.site h3{text-wrap:balance;line-height:1.08}
+.site a{color:inherit}
+.site a:focus-visible,.site button:focus-visible{outline:3px solid currentColor;outline-offset:2px}
+.site img{max-width:100%;display:block}
+.mono{font-family:var(--mono);font-weight:500}
+.sv{flex:none}
+.l-pt [data-l="en"],.l-en [data-l="pt"]{display:none!important}
+
+/* tema do Viavista: identidade Farol, fundo escuro como painel de moto */
+.tema-vy{--pg2:var(--vy);--bco:var(--vy-card);--tx:var(--vy-tx);--tx2:var(--vy-tx2);--ln:var(--vy-ln)}
+
+.s-topo{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:14px 18px;background:var(--bco);border-bottom:1px solid var(--ln)}
+.s-marca{font-weight:800;font-size:16px;letter-spacing:-.01em;text-decoration:none}
+.s-volta{display:inline-flex;align-items:center;gap:3px;font-weight:600;font-size:15px;text-decoration:none;margin-left:-5px}
+.s-idioma{display:flex;gap:9px;font:inherit;font-size:14px;color:var(--tx2);flex:none;cursor:pointer;background:none;border:0;padding:4px 0}
+.s-idioma b{color:var(--tx);font-weight:700}
+.s-abre{padding:30px 18px 20px}
+.s-abre h1{font-size:38px;font-weight:800;letter-spacing:-.02em}
+.s-abre p{margin-top:9px;color:var(--tx2);max-width:42ch}
+.s-apps{display:grid;gap:12px;padding:0 12px 18px}
+.bloco{position:relative;border-radius:18px;padding:22px;color:#fff;display:flex;flex-direction:column;gap:13px;align-items:flex-start;min-width:0}
+.bloco.mp{background:linear-gradient(165deg,var(--mp),var(--mp2))}
+.bloco.zr{background:var(--zr)}
+.bloco.vy{background:var(--vy);color:var(--vy-tx)}
+.b-top{display:flex;gap:13px;align-items:center;min-width:0}
+.ic{width:64px;height:64px;border-radius:15px;flex:none}
+.ic.g{width:84px;height:84px;border-radius:19px}
+.bloco.zr .ic,.bloco.vy .ic,.h-app.vy .ic{box-shadow:0 0 0 1px rgba(255,255,255,.16)}
+.b-top h2{font-size:25px;font-weight:800;letter-spacing:-.01em}
+.vy-nome{font-family:var(--vy-letra);font-stretch:125%;font-weight:800;letter-spacing:.07em}
+.bloco .vy-nome{font-size:27px;letter-spacing:.07em}
+.b-top p{font-size:15px;line-height:1.3;margin-top:3px;opacity:.92}
+.estado{font-size:13px;font-weight:700;padding:4px 10px;border-radius:999px}
+.estado.ok{background:#fff;color:var(--mp2)}
+.estado.breve{background:var(--vy-am);color:var(--vy-sobre)}
+.b-aviso{font-size:15px}
+.selos{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.selos a{display:block}
+.selos img{height:40px;width:auto}
+/* a arte oficial do Google Play tem margens diferentes em cada idioma: recorta para igualar ao selo da Apple */
+.selos a.gp{position:relative;width:135px;height:40px;overflow:hidden}
+.selos a.gp img{position:absolute;max-width:none;width:auto}
+.selos a.gp img[data-l="pt"]{left:0;top:-6px;height:52px}
+.selos a.gp img[data-l="en"]{left:-10px;top:-10px;height:59.5px}
+.b-pe{margin-top:auto;padding-top:5px;width:100%;display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:15px}
+.b-pe a{display:inline-flex;align-items:center;gap:2px;font-weight:700;text-decoration:none}
+.b-pe .mono{font-size:13px;opacity:.85}
+.s-pe{padding:20px 18px 24px;display:flex;flex-direction:column;gap:5px;border-top:1px solid var(--ln);font-size:14px;color:var(--tx2)}
+.s-pe a{color:var(--tx);font-weight:600}
+.fraco{color:var(--tx2);font-size:14px}
+.h-app{position:relative;padding:28px 22px 30px;color:#fff;display:flex;flex-direction:column;gap:22px}
+.h-app.mp{background:linear-gradient(165deg,var(--mp),var(--mp2));padding-bottom:0}
+.h-app.vy{background:var(--vy);color:var(--vy-tx);border-bottom:1px solid var(--vy-ln)}
+.h-txt{display:flex;flex-direction:column;gap:11px;align-items:flex-start;min-width:0}
+.h-app h1{font-size:34px;font-weight:800;letter-spacing:-.02em}
+.h-app.vy h1{font-size:38px;letter-spacing:.07em}
+.h-app p{font-size:17px;max-width:32ch}
+.h-foto{align-self:center;width:250px;aspect-ratio:.92;border:6px solid #071F26;border-bottom:0;border-radius:22px 22px 0 0;overflow:hidden;background:#F2F6F7}
+.h-foto img{width:100%}
+.s-corpo{padding:20px 18px 22px;display:flex;flex-direction:column;gap:16px}
+.s-fatos{display:grid;gap:13px}
+.s-fatos h3{font-size:18px;font-weight:700}
+.tema-vy .s-fatos h3{font-family:var(--vy-letra);font-stretch:112%;font-weight:800}
+.s-fatos p{color:var(--tx2);font-size:15px;margin-top:2px}
+.s-links{background:var(--bco);border:1px solid var(--ln);border-radius:13px;overflow:hidden}
+.s-links a{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:13px 14px;font-weight:600;text-decoration:none;border-top:1px solid var(--ln)}
+.s-links a:first-child{border-top:0}
+.s-nota{font-size:13px;color:var(--tx2);line-height:1.4}
+.s-texto{padding:24px 18px 28px;display:flex;flex-direction:column;gap:9px;align-items:flex-start;min-width:0;max-width:calc(720px + 2 * var(--g));margin-inline:auto}
+.s-texto h1{font-size:29px;font-weight:800;letter-spacing:-.02em}
+.s-texto h2{font-size:19px;font-weight:700;margin-top:12px}
+.s-texto h3{font-size:16px;font-weight:700;margin-top:10px}
+.s-texto p,.s-texto li{font-size:15px;overflow-wrap:anywhere}
+.s-texto ul{display:flex;flex-direction:column;gap:6px;padding-left:18px;list-style:disc}
+.s-texto [data-sec],.s-texto > div[data-l]{display:flex;flex-direction:column;gap:9px;align-items:flex-start;min-width:0}
+.s-texto [data-sec][hidden]{display:none}
+.fichas{display:flex;flex-wrap:wrap;gap:6px}
+.fichas a{font-size:13px;font-weight:600;background:var(--bco);border:1px solid var(--ln);border-radius:999px;padding:4px 10px;text-decoration:none}
+.fichas a[aria-current="true"]{background:var(--tx);border-color:var(--tx);color:var(--bco)}
+.s-email{display:block;width:100%;text-align:center;background:var(--tx);color:var(--pg2)!important;border-radius:11px;padding:13px 10px;font-weight:700;font-size:15px;text-decoration:none;overflow-wrap:anywhere}
+.tema-vy .s-email{background:var(--vy-am);color:var(--vy-sobre)!important}
+
+html{-webkit-text-size-adjust:100%}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:flex;flex-direction:column}
+main{flex:1}
+.pagina-404{padding:48px 18px;display:flex;flex-direction:column;gap:12px;align-items:flex-start;max-width:calc(720px + 2 * var(--g));margin-inline:auto}
+.pagina-404 h1{font-size:34px;font-weight:800}
+.pagina-404 a{font-weight:700}
+@media (min-width:760px){
+.site{--g:max(40px,calc((100vw - 1040px) / 2))}
+.s-topo{padding:16px var(--g)}
+.s-abre{padding:52px var(--g) 28px}
+.s-abre h1{font-size:60px}
+.s-abre p{font-size:19px;max-width:48ch}
+.s-apps{grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;padding:0 var(--g) 40px}
+.bloco{padding:24px}
+.s-pe{padding:22px var(--g) 28px;flex-direction:row;flex-wrap:wrap;gap:6px 28px}
+.h-app{flex-direction:row;align-items:center;justify-content:space-between;gap:40px;padding:44px calc(var(--g) + 20px) 0;overflow:hidden}
+.h-app.vy{padding-bottom:44px}
+.h-app h1{font-size:48px}
+.h-app.vy h1{font-size:72px}
+.h-txt{padding-bottom:44px}
+.h-app.vy .h-txt{padding-bottom:0}
+.h-app p{font-size:20px}
+.h-foto{width:280px;align-self:flex-end}
+.s-corpo{padding:32px calc(var(--g) + 20px);display:grid;grid-template-columns:1.5fr 1fr;gap:20px 40px;align-items:start}
+.s-nota{grid-column:1 / -1}
+.s-texto{padding:36px var(--g) 48px}
+}

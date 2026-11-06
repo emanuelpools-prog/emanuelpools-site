@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="l-en" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Support · Viavista</title>
+<meta name="description" content="Support for Viavista, the motorcycle trips app.">
+<link rel="canonical" href="https://emanuelpools.com/viavista/support/">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100,400;112,800;125,800&family=DM+Mono:wght@500&family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="../../estilo.css">
+<script>(function(){var l=new URLSearchParams(location.search).get('lang');if(l!=='pt'&&l!=='en'){l=null;try{l=localStorage.getItem('idioma')}catch(e){}}if(!l)l=(navigator.language||'').toLowerCase().indexOf('pt')===0?'pt':'en';document.documentElement.className='l-'+l;document.documentElement.lang=l==='pt'?'pt-BR':'en'})();</script>
+</head>
+<body class="site tema-vy">
+<header class="s-topo">
+  <a class="s-volta" href="/viavista/"><svg class="sv" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Viavista</a>
+  <button type="button" class="s-idioma" aria-label="Português / English"><b data-l="pt">PT</b><span data-l="pt">EN</span><span data-l="en">PT</span><b data-l="en">EN</b></button>
+</header>
+<main><article class="s-texto">
+  <h1><span data-l="pt">Suporte</span><span data-l="en">Support</span></h1>
+  <p><span data-l="pt">Escreva para nós e diga qual app você usa e o modelo do seu celular.</span><span data-l="en">Email us and tell us which app you use and your phone model.</span></p>
+  <a class="s-email" href="mailto:emanuelpools@gmail.com">emanuelpools@gmail.com</a>
+  <h2><span data-l="pt">Compras e reembolso</span><span data-l="en">Purchases and refunds</span></h2>
+  <p><span data-l="pt">As compras são feitas pela App Store ou pelo Google Play. O reembolso é pedido na própria loja.</span><span data-l="en">Purchases go through the App Store or Google Play. Refunds are requested from the store.</span></p></article></main>
+<script>(function(){
+var r=document.documentElement,b=document.querySelectorAll('.s-idioma');
+function atual(){return r.className==='l-pt'?'pt':'en'}
+function secao(l){var s=document.querySelectorAll('[data-sec]');if(!s.length)return;s.forEach(function(e){e.hidden=e.dataset.sec!==l});document.querySelectorAll('[data-ficha]').forEach(function(a){a.setAttribute('aria-current',String(a.dataset.ficha===l))})}
+b.forEach(function(x){x.addEventListener('click',function(){var l=atual()==='pt'?'en':'pt';r.className='l-'+l;r.lang=l==='pt'?'pt-BR':'en';try{localStorage.setItem('idioma',l)}catch(e){}secao(l)})});
+document.querySelectorAll('[data-ficha]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();secao(a.dataset.ficha);history.replaceState(null,'','#'+a.dataset.ficha)})});
+var h=location.hash.slice(1);secao(/^(pt|en|es|it)$/.test(h)?h:atual());
+})();</script>
+</body>
+</html>

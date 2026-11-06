@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html class="l-en" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Viavista: Motorcycle Trips</title>
+<meta name="description" content="Viavista, an app for motorcycle trips: road, cost and arrival. Coming soon to iPhone and Android.">
+<link rel="canonical" href="https://emanuelpools.com/viavista/">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100,400;112,800;125,800&family=DM+Mono:wght@500&family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="../estilo.css">
+<script>(function(){var l=new URLSearchParams(location.search).get('lang');if(l!=='pt'&&l!=='en'){l=null;try{l=localStorage.getItem('idioma')}catch(e){}}if(!l)l=(navigator.language||'').toLowerCase().indexOf('pt')===0?'pt':'en';document.documentElement.className='l-'+l;document.documentElement.lang=l==='pt'?'pt-BR':'en'})();</script>
+</head>
+<body class="site tema-vy">
+<header class="s-topo">
+  <a class="s-volta" href="/"><svg class="sv" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-l="pt">Todos os apps</span><span data-l="en">All apps</span></a>
+  <button type="button" class="s-idioma" aria-label="Português / English"><b data-l="pt">PT</b><span data-l="pt">EN</span><span data-l="en">PT</span><b data-l="en">EN</b></button>
+</header>
+<main>
+<section class="h-app vy">
+  <div class="h-txt">
+    <img class="ic g" src="../img/viavista.svg" alt="" width="84" height="84">
+    <h1 class="vy-nome">VIAVISTA</h1>
+    <p><span data-l="pt">Sua viagem de moto: estrada, custo e chegada.</span><span data-l="en">Your motorcycle trip: road, cost and arrival.</span></p>
+    <span class="estado breve"><span data-l="pt">Em breve</span><span data-l="en">Coming soon</span></span>
+  </div>
+</section>
+<div class="s-corpo">
+  <ul class="s-fatos"><li><h3><span data-l="pt">Custo de cada dia</span><span data-l="en">Cost of each day</span></h3><p><span data-l="pt">Mostra quanto cada dia da viagem deve custar.</span><span data-l="en">Shows what each day of the trip should cost.</span></p></li><li><h3><span data-l="pt">Com a sua moto</span><span data-l="en">With your motorcycle</span></h3><p><span data-l="pt">O consumo da sua moto entra na conta.</span><span data-l="en">Your bike's fuel use goes into the numbers.</span></p></li><li><h3><span data-l="pt">Brasil e EUA</span><span data-l="en">Brazil and the US</span></h3><p><span data-l="pt">Rotas nos dois países, em português e inglês.</span><span data-l="en">Routes in both countries, in Portuguese and English.</span></p></li></ul>
+  <nav class="s-links" aria-label="Links do app">
+  <a href="/viavista/support/"><span data-l="pt">Suporte</span><span data-l="en">Support</span><svg class="sv" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+</nav>
+</div>
+</main>
+<footer class="s-pe">
+  <p><span data-l="pt">Procurando serviço de piscina?</span><span data-l="en">Looking for pool service?</span> <a href="https://emanuelpool.com" rel="nofollow"><span data-l="pt">Acesse</span><span data-l="en">Go to</span> emanuelpool.com</a></p>
+  <p><span data-l="pt">Suporte</span><span data-l="en">Support</span>: <a href="mailto:emanuelpools@gmail.com">emanuelpools@gmail.com</a></p>
+  <p class="fraco">© 2026 Emanuel Pools Corp · Boca Raton, Florida</p>
+</footer>
+<script>(function(){
+var r=document.documentElement,b=document.querySelectorAll('.s-idioma');
+function atual(){return r.className==='l-pt'?'pt':'en'}
+function secao(l){var s=document.querySelectorAll('[data-sec]');if(!s.length)return;s.forEach(function(e){e.hidden=e.dataset.sec!==l});document.querySelectorAll('[data-ficha]').forEach(function(a){a.setAttribute('aria-current',String(a.dataset.ficha===l))})}
+b.forEach(function(x){x.addEventListener('click',function(){var l=atual()==='pt'?'en':'pt';r.className='l-'+l;r.lang=l==='pt'?'pt-BR':'en';try{localStorage.setItem('idioma',l)}catch(e){}secao(l)})});
+document.querySelectorAll('[data-ficha]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();secao(a.dataset.ficha);history.replaceState(null,'','#'+a.dataset.ficha)})});
+var h=location.hash.slice(1);secao(/^(pt|en|es|it)$/.test(h)?h:atual());
+})();</script>
+</body>
+</html>
