@@ -72,7 +72,7 @@
 .s-fatos p{color:var(--tx2);font-size:15px;margin-top:2px}
 .s-links{background:var(--bco);border:1px solid var(--ln);border-radius:13px;overflow:hidden}
 .s-links a{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:13px 14px;font-weight:600;text-decoration:none;border-top:1px solid var(--ln)}
-.s-links a:first-child{border-top:0}
+.s-links a:first-child,.s-links a[data-l="pt"]:first-child + a[data-l="en"]{border-top:0}
 .s-nota{font-size:13px;color:var(--tx2);line-height:1.4}
 .s-texto{padding:24px 18px 28px;display:flex;flex-direction:column;gap:9px;align-items:flex-start;min-width:0;max-width:calc(720px + 2 * var(--g));margin-inline:auto}
 .s-texto h1{font-size:29px;font-weight:800;letter-spacing:-.02em}
