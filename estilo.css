@@ -70,6 +70,17 @@
 .s-fatos h3{font-size:18px;font-weight:700}
 .tema-vy .s-fatos h3{font-family:var(--vy-letra);font-stretch:112%;font-weight:800}
 .s-fatos p{color:var(--tx2);font-size:15px;margin-top:2px}
+.vy-rotas{display:flex;flex-direction:column;gap:13px;align-items:stretch;min-width:0;padding-bottom:22px;border-bottom:1px solid var(--ln)}
+.vy-rotas h2{font-family:var(--vy-letra);font-stretch:112%;font-weight:800;font-size:24px;letter-spacing:-.005em}
+.vr-txt p{color:var(--tx2);font-size:15px;margin-top:5px;max-width:44ch}
+.vr-lista{display:grid;gap:8px}
+.vr-lista a{display:flex;justify-content:space-between;align-items:center;gap:10px;min-height:58px;padding:10px 12px 10px 14px;background:var(--bco);border:1px solid var(--ln);border-radius:13px;text-decoration:none}
+.vr-lista a:hover{border-color:var(--vy-am)}
+.vr-lista span{display:flex;flex-direction:column;gap:1px;min-width:0}
+.vr-lista b{font-weight:700;font-size:16px;line-height:1.2}
+.vr-lista small{color:var(--tx2);font-size:13px}
+.vr-lista .sv,.vy-rotas .vr-todas{color:var(--vy-am)}
+.vy-rotas .vr-todas{display:inline-flex;align-items:center;gap:2px;align-self:flex-start;font-weight:700;font-size:15px;text-decoration:none;padding:4px 0}
 .s-links{background:var(--bco);border:1px solid var(--ln);border-radius:13px;overflow:hidden}
 .s-links a{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:13px 14px;font-weight:600;text-decoration:none;border-top:1px solid var(--ln)}
 .s-links a:first-child,.s-links a[data-l="pt"]:first-child + a[data-l="en"]{border-top:0}
@@ -113,6 +124,11 @@ main{flex:1}
 .h-app p{font-size:20px}
 .h-foto{width:280px;align-self:flex-end}
 .s-corpo{padding:32px calc(var(--g) + 20px);display:grid;grid-template-columns:1.5fr 1fr;gap:20px 40px;align-items:start}
+.vy-rotas{grid-column:1 / -1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.75fr);grid-template-areas:"txt lista" "todas lista";gap:14px 40px;align-items:start;padding-bottom:28px}
+.vy-rotas h2{font-size:30px}
+.vr-txt{grid-area:txt}
+.vr-lista{grid-area:lista;grid-template-columns:repeat(2,minmax(0,1fr))}
+.vr-todas{grid-area:todas}
 .s-nota{grid-column:1 / -1}
 .s-texto{padding:36px var(--g) 48px}
 }
