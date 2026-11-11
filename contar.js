@@ -21,7 +21,7 @@ function linkDoPlay(href, origem, pagina) {
 }
 function linkDaApple(href, pt, origem, pagina) {
   if (!pt || !/^https:\/\/apps\.apple\.com\/app\/id\d+$/.test(href)) return href;
-  return href + "?pt=" + pt + "&ct=" + (origem + "-" + pagina).slice(0, 40) + "&mt=8";
+  return href + "?pt=" + pt + "&ct=" + (origem + "-" + pagina).slice(0, 30) + "&mt=8";
 }
 function ligar(w, urlContagem, applePt) {
   var d = w.document, pagina = d.body && d.body.getAttribute("data-pagina");
@@ -53,5 +53,5 @@ function ligar(w, urlContagem, applePt) {
   var estradas = d.querySelectorAll(".vr-lista a, .vr-todas");
   for (var j = 0; j < estradas.length; j++) estradas[j].addEventListener("click", function () { contar("estrada", "viavista"); });
 }
-ligar(window, "https://emanuelpools-contagem.pages.dev/evento", "");
+ligar(window, "https://emanuelpools-contagem.pages.dev/evento", "129389990");
 })();
