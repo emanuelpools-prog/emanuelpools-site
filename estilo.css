@@ -30,10 +30,13 @@
 .bloco.mp{background:linear-gradient(165deg,var(--mp),var(--mp2))}
 .bloco.zr{background:var(--zr)}
 .bloco.vy{background:var(--vy);color:var(--vy-tx)}
+/* DealLantern (12/nov/2026): cartao "em breve", sem selo e sem link. Cores da identidade aprovada (achado/marca/LEIA-ME.md). */
+.bloco.dl{background:linear-gradient(160deg,#123A5C,#0B2A44 55%,#071C2E)}
+.bloco.dl .estado{background:#F2B01E;color:#3A2A00}
 .b-top{display:flex;gap:13px;align-items:center;min-width:0}
 .ic{width:64px;height:64px;border-radius:15px;flex:none}
 .ic.g{width:84px;height:84px;border-radius:19px}
-.bloco.zr .ic,.bloco.vy .ic,.h-app.vy .ic{box-shadow:0 0 0 1px rgba(255,255,255,.16)}
+.bloco.zr .ic,.bloco.vy .ic,.bloco.dl .ic,.h-app.vy .ic{box-shadow:0 0 0 1px rgba(255,255,255,.16)}
 .b-top h2{font-size:25px;font-weight:800;letter-spacing:-.01em}
 .vy-nome{font-family:var(--vy-letra);font-stretch:125%;font-weight:800;letter-spacing:.07em}
 .bloco .vy-nome{font-size:27px;letter-spacing:.07em}
@@ -52,6 +55,7 @@
 .selos a.gp img[data-l="en"]{left:-10px;top:-10px;height:59.5px}
 .b-pe{margin-top:auto;padding-top:5px;width:100%;display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:15px}
 .b-pe a{display:inline-flex;align-items:center;gap:2px;font-weight:700;text-decoration:none}
+.b-pe b{font-weight:700}
 .b-pe .mono{font-size:13px;opacity:.85}
 .s-pe{padding:20px 18px 24px;display:flex;flex-direction:column;gap:5px;border-top:1px solid var(--ln);font-size:14px;color:var(--tx2)}
 .s-pe a{color:var(--tx);font-weight:600}
