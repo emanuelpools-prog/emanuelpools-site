@@ -30,13 +30,13 @@
 .bloco.mp{background:linear-gradient(165deg,var(--mp),var(--mp2))}
 .bloco.zr{background:var(--zr)}
 .bloco.vy{background:var(--vy);color:var(--vy-tx)}
-/* DealLantern (12/nov/2026): cartao "em breve", sem selo e sem link. Cores da identidade aprovada (achado/marca/LEIA-ME.md). */
-.bloco.dl{background:linear-gradient(160deg,#123A5C,#0B2A44 55%,#071C2E)}
-.bloco.dl .estado{background:#F2B01E;color:#3A2A00}
+/* ProbateLantern (cartao de 12/nov/2026; nome novo em 17/nov): "em breve", sem selo e sem link. Cores da identidade aprovada (achado/marca/LEIA-ME.md). */
+.bloco.pl{background:linear-gradient(160deg,#123A5C,#0B2A44 55%,#071C2E)}
+.bloco.pl .estado{background:#F2B01E;color:#3A2A00}
 .b-top{display:flex;gap:13px;align-items:center;min-width:0}
 .ic{width:64px;height:64px;border-radius:15px;flex:none}
 .ic.g{width:84px;height:84px;border-radius:19px}
-.bloco.zr .ic,.bloco.vy .ic,.bloco.dl .ic,.h-app.vy .ic{box-shadow:0 0 0 1px rgba(255,255,255,.16)}
+.bloco.zr .ic,.bloco.vy .ic,.bloco.pl .ic,.h-app.vy .ic{box-shadow:0 0 0 1px rgba(255,255,255,.16)}
 .b-top h2{font-size:25px;font-weight:800;letter-spacing:-.01em}
 .vy-nome{font-family:var(--vy-letra);font-stretch:125%;font-weight:800;letter-spacing:.07em}
 .bloco .vy-nome{font-size:27px;letter-spacing:.07em}
