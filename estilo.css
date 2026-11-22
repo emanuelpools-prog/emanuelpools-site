@@ -30,7 +30,7 @@
 .bloco.mp{background:linear-gradient(165deg,var(--mp),var(--mp2))}
 .bloco.zr{background:var(--zr)}
 .bloco.vy{background:var(--vy);color:var(--vy-tx)}
-/* ProbateLantern (cartao de 12/nov/2026; nome novo em 17/nov): "em breve", sem selo e sem link. Cores da identidade aprovada (achado/marca/LEIA-ME.md). */
+/* ProbateLantern (cartao de 12/nov/2026; nome novo em 17/nov; "No ar" com o elo para o site em 22/nov): sem selo de loja. Cores da identidade aprovada (achado/marca/LEIA-ME.md). */
 .bloco.pl{background:linear-gradient(160deg,#123A5C,#0B2A44 55%,#071C2E)}
 .bloco.pl .estado{background:#F2B01E;color:#3A2A00}
 /* Como na marca em fundo escuro: "Probate" branco e "Lantern" ouro (pedido do Fabio, 17/nov) */
